@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Тест на личность</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dark.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <form action="/end_dark">
+        <h1 class="header-dark">ТЕСT<br>НА ЛИЧНОСТЬ</h1>
+        <h1>Кто ты из Звездных Войн?</h1>
+
+        <div class="question-dark">
+            <input name="question-1" type="text" class="answer" value="">
+            <h2 class="text_question-light">1. Чем бы вы предпочли заниматься в жизни?</h2>
+            <button class="button-light radio" type="button" value="0">Своим бизнесом</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">Работать на кого-то</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-2" type="text" class="answer" value="">
+            <h2 class="text_question-light">2. Насколько сложно переубедить вас в чем-то?</h2>
+            <button class="button-light radio" type="button" value="0">Меня сложно победить в споре. Я останусь при своём мнении</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">Меня вполне несложно переубедить</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-3" type="text" class="answer" value="">
+            <h2 class="text_question-light">3. Как вы оцениваете свою физическую подготовку?</h2>
+            <button class="button-light radio" type="button" value="0">Я довольно неспортивный, веду сидячий образ жизни</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">Я весьма спортивный и хорошо переношу физические нагрузки</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-4" type="text" class="answer" value="">
+            <h2 class="text_question-light">4. Как вы относитесь к маскам?</h2>
+            <button class="button-light radio" type="button" value="0">В них сложно дышать, не люблю носить маски</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">Нормально отношусь к маскам</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-5" type="text" class="answer" value="">
+            <h2 class="text_question-light">5. Насколько вы разговорчивы в компании людей?</h2>
+            <button class="button-light radio" type="button" value="0">Малословен. В основном я в роли слушателя</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">Весьма разговорчив, активно поддерживаю беседу</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-6" type="text" class="answer" value="">
+            <h2 class="text_question-light">6. Вас легко разозлить?</h2>
+            <button class="button-light radio" type="button" value="0">Да</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">Нет</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-7" type="text" class="answer" value="">
+            <h2 class="text_question-light">7. Какое оружие вы предпочитаете?</h2>
+            <button class="button-light radio" type="button" value="0">Световой меч</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">Бластер</button>
+            <br>
+            <button class="button-light radio" type="button" value="2">Молнии из рук</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-8" type="text" class="answer" value="">
+            <h2 class="text_question-light">8. На какие оценки вы учитесь/учились в школе?</h2>
+            <button class="button-light radio" type="button" value="0">3-4</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">4-5</button>
+            <br>
+            <button class="button-light radio" type="button" value="2">Не учился в школе</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-9" type="text" class="answer" value="">
+            <h2 class="text_question-light">9. Есть ли среди ваших знакомых люди, которые боятся вас?</h2>
+            <button class="button-light radio" type="button" value="0">Хотя бы один есть</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">Вообще нет</button>
+        </div>
+
+        <div class="question-dark">
+            <input name="question-10" type="text" class="answer" value="">
+            <h2 class="text_question-light">10. Какая трилогия круче?</h2>
+            <button class="button-light radio" type="button" value="0">Приквелы</button>
+            <br>
+            <button class="button-light radio" type="button" value="1">ОТ</button>
+            <br>
+            <button class="button-light radio" type="button" value="2">Сиквелы</button>
+            <br>
+            <button class="button-light radio" type="button" value="3">Не смотрел :)</button>
+        </div>
+
+
+        <div class="continue">
+            <button class="button_simple-dark">Закончить</button>
+        </div>
+    </form>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

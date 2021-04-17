@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Тест на личность</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <h1 class="site-header">ТЕСT<br>НА ЛИЧНОСТЬ</h1>
+    <h1>Кто ты из Звездных Войн?</h1>
+
+    <form action="/main_test">
+      <div class="question">
+        <input name="question-1" type="text" class="answer" value="">
+        <h2 class="text_question">Для начала выберите сторону</h2>
+        <button type="button" class="button_light button_theme radio" value="светлая">СВЕТЛАЯ</button>
+        <br>
+        <button type="button" class="button_dark button_theme radio" value="темная">ТЕМНАЯ</button>
+      </div>
+
+      <div class="continue">
+        <button class="button_simple" type="submit">Начать</button>
+      </div>
+    </form>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
