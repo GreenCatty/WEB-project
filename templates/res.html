@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Тест на личность</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='light.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename=side) }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous">
     </script>
 </head>
 <body>
-    <h1 class="header-light">ТЕСT<br>НА ЛИЧНОСТЬ</h1>
+    <h1 class="header">ТЕСT<br>НА ЛИЧНОСТЬ</h1>
     <h1>Кто ты из Звездных Войн?</h1>
     <div class="img_div"><img class="image" src={{file}}></div>
     <h3 style="text-align: center; font-size: 35px">{{name}}</h3>
@@ -26,9 +26,23 @@
         <p1>{{text2}}</p1>
     </div>
     <br> <br>
+    <h2>Более подробный вердикт</h2>
+    {% for i in range(10) %}
+        <div style="align-self: center; align-content: center; text-align: center">
+            <div style="align-content: center; text-align: center">
+                <p1>{{res[i][1]}}</p1>
+            </div>
+            <div style="align-content: center; text-align: center">
+                <progress max="40" value={{res[i][0]}}></progress>
+                <h2>{{res[i][2]}}</h2>
+            </div>
+        </div>
+        <br>
+    {% endfor %}
+    <br>
     <form action="/test_starwars">
         <div class="continue">
-            <button class="button_simple-light" type="submit">Пройти заново</button>
+            <button class="button_simple" type="submit">Пройти заново</button>
         </div>
     </form>
 </body>

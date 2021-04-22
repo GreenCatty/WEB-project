@@ -31,7 +31,7 @@ h2 {
   color: #ffffff;
 }
 
-.header-light {
+.header {
   min-width: 550px;
   height: 186px;
   margin-bottom: 70px;
@@ -41,26 +41,7 @@ h2 {
   color: #ffffff;
 }
 
-.header-dark {
-  min-width: 550px;
-  height: 186px;
-  margin-bottom: 70px;
-  padding-top: 30px;
-  background: rgb(130, 0, 0);
-  background-size: cover;
-  color: #ffffff;
-}
-
-.text_question {
-  text-align: center;
-  width: 600px;
-  font-family: "Calibri", serif;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 100px;
-}
-
-.text_question-light {
+.text_question{
   text-align: center;
   width: 1000px;
   font-family: "Calibri", serif;
@@ -72,28 +53,9 @@ h2 {
 
 .question {
   align-self: center;
-  width: 600px;
-  text-align: center;
-  border: 3px #1E90FF solid;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.question-light {
-  align-self: center;
   width: 1000px;
   text-align: center;
   border: 3px rgb(0, 200, 100) solid;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}
-
-.question-dark {
-  align-self: center;
-  width: 1000px;
-  text-align: center;
-  border: 3px rgb(255, 80, 80) solid;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -108,19 +70,10 @@ h2 {
   margin-top: 25px;
 }
 
-.button_simple-light {
+.button_simple {
   color: rgb(255, 255, 255);
   font-size: 20px;
   background: rgb(0, 150, 20);
-  min-height: 50px;
-  min-width: 100px;
-  margin-bottom:300px;
-}
-
-.button_simple-dark {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  background: rgb(255, 0, 0);
   min-height: 50px;
   min-width: 100px;
   margin-bottom:300px;
@@ -141,15 +94,8 @@ h2 {
   border-color: rgb(0, 0, 0);
   
 }
-.button_simple {
-    color: rgb(255, 255 ,255);
-    font-size: 20px;
-    background: #1E50FF;
-    min-height: 50px;
-    min-width: 100px;
-}
 
-.button-light {
+.button-var {
   display: inline-block;
   font-family: arial, sans-serif;
   font-size: 20px;
@@ -162,6 +108,12 @@ h2 {
   border-color: rgb(0, 0, 0);
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.progress-res {
+    background: rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
 }
 
 .is-active{

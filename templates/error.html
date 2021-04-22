@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Тест на личность</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename=side) }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous">
     </script>
 </head>
 <body>
-    <h1 class="site-header">ТЕСT<br>НА ЛИЧНОСТЬ</h1>
+    <h1 class="header">ТЕСT<br>НА ЛИЧНОСТЬ</h1>
     <h1>Вы ответили не на все вопросы!</h1>
     <form action="/test_starwars">
         <div class="continue">
